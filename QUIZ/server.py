@@ -30,7 +30,7 @@ questions = [
 
 answers = ['b', 'c', 'd', 'a', 'b', 'a', 'c', 'b', 'c', 'a', 'd']
 
-def clientThread(con):
+def clientThread(con, names):
     score = 0
     con.send("Welcome to this quiz!".encode('utf-8'))
     con.send("You will recieve a question along with some options, choose the correct one.".encode('utf-8'))
